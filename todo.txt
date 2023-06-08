@@ -1,0 +1,17 @@
+add template with base code:
+io
+some basic functions
+some basic ds
+
+
+now, everything will be grouped:
+
+DS:
+rb tree as set(oh boy i should really implement an efficient one)
+treap as set(extended functional)
+segtree
+queue
+deque
+priority queue
+convex hull
+online convex hull (with either sets or lichao)
