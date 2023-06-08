@@ -1,17 +1,22 @@
 add template with base code:
-io
-some basic functions
-some basic ds
+  io
+  some basic interfaces:
+    ..., 
+    comparator1(Less), 
+    comparator2(Less,Equal),
+    comparator3(Less,Equal,Greater)
+  some basic functions:
+    min, max, abs, sum, alowerBound, upperBound, etc
+  some basic ds:
+    pair, triple, set, etc
 
 
 now, everything will be grouped:
 
 DS:
-rb tree as set(oh boy i should really implement an efficient one)
-treap as set(extended functional)
-segtree
-queue
-deque
-priority queue
-convex hull
-online convex hull (with either sets or lichao)
+  segtree
+  queue
+  deque
+  priority queue
+  convex hull
+  online convex hull (with either sets or lichao)
