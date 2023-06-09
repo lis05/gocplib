@@ -2,7 +2,6 @@
 // Me and my monke,
 // Monke doesn't wear any pants
 // Monke does the sexiest of dances 
-// i like trains
 package main
 
 import (
