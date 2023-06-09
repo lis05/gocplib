@@ -1,4 +1,4 @@
-// interface for lazy seg tree
+// interface for lazy seg tree 
 type lazySegTreeManager[T any, U any, L any] interface {
 	neutralNode() T
 	neutralLazy() L
