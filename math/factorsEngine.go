@@ -68,3 +68,42 @@ func (f factorsEngine) factorize(n int) []pair[int] {
 
 	return res
 }
+
+func (f factorsEngine) factorizeUniquePrimes(n int) []int {
+	var res []int
+	for div := 2; div*div <= n; div++ {
+		if n <= f.n {
+			break
+		}
+
+		cnt := 0
+		for n%div == 0 {
+			cnt++
+			n /= div
+		}
+		if cnt == 0 {
+			continue
+		}
+		res = append(res, div)
+	}
+
+	if n > f.n {
+		res = append(res, n)
+		return res
+	}
+
+	for n > 1 {
+		cnt := 0
+		div := f.sieve[n]
+		for n%div == 0 {
+			cnt++
+			n /= div
+		}
+		if cnt == 0 {
+			continue
+		}
+		res = append(res, div)
+	}
+
+	return res
+}
